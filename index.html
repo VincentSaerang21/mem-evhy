@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD MEM EVHY!!</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js" integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.rawgit.com/desandro/masonry/master/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+    <div class="loading">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div class="windows10-signin">
+      <div class="windows10-signin__overlay"></div>
+      <form id="signin" class="windows10-signin__content">
+        <div class="windows10-signin__user">
+          <img src="assets/evhy.jpg" class="windows10-signin__user-img" alt="User image">
+          <div class="windows10-signin__user-name">Selamat Datang!</div>
+        </div>
+        <div class="windows10-signin__password">
+          <input type="password" class="windows10-signin__password-input" placeholder="Password">
+          <button class="windows10-signin__password-btn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>
+    </form>
+    </div>
+
+    <div class="windows10-signin__getting-ready process" id="getready">
+      <div class="windows10-signin__getting-ready-text">Selamat ulang tahun, Mem Evhy! Semoga panjang umur, sehat selalu, dan makin jago ngoding sampai bisa bikin program yang bisa ngasih nilai otomatis 'A' buat murid murid, hehe. 😄 Semoga tahun ini makin banyak ilmu yang bisa dibagi, dan semoga storage-nya selalu penuh dengan kebahagiaan, RAM-nya lancar terus, dan virus-nya cuma virus kebahagiaan aja! 🎉🎂</div>
+      <div class="windows10-signin__getting-ready-progress"></div>
+    </div>
+
+
+<div class="desktop">
+  <div class="start-menu-fade"></div>
+  <div class="start-menu">
+    <div class="start-menu__list">
+      <div class="media">
+        <a class="user-info menu-toggle" href="#" data-menu="user">
+        <img class="user-info__img media__img" src="assets/evhy.jpg" alt="User image">
+        <div class="user-info__name media__body">
+          Mem Evhy
+        </div>
+        </a>
+      </div>
+      
+
+      <ul class="start-menu__recent">
+        <li class="start-menu__explorer">
+          <a href="#" data-window="explorer">
+            <i class="fa fa-folder"></i>
+            File Explorer
+          </a>
+        </li>
+        <li class="start-menu__mail">
+          <a href="#" data-window="mail">
+            <i class="fa fa-envelope"></i>
+            Mail
+          </a>
+        </li>
+        <li class="start-menu__notepad">
+          <a href="#" data-window="notepad">
+            <i class="fa fa-pencil"></i>
+            Notepad
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="start-screen-scroll">
+    <div class="start-screen">
+      <a class="start-screen__tile start-screen__tile--explorer masonry-item" href="#" data-window="explorer">
+        <i class="fa fa-folder"></i>
+        <span>File Explorer</span>
+      </a>
+      <a class="start-screen__tile masonry-item start-img-one" href="#">
+      </a>
+      <a class="start-screen__tile start-screen__tile--wide masonry-item start-img-two" href="#"  data-ss-colspan="2">
+      </a>
+    </div>
+    </div>
+  </div>
+  
+  <div class="taskbar">
+    <a class="taskbar__item taskbar__item--start" href="#" data-window="start">
+      <i class="fab fa-windows"></i>
+    </a>
+    <a class="taskbar__item taskbar__item--explorer" href="#" data-window="explorer">
+      <i class="fa fa-folder"></i>
+    </a>
+    <a class="taskbar__item taskbar__item--mail" href="#" data-window="mail">
+      <i class="fa fa-envelope"></i>
+    </a>
+    <a class="taskbar__item taskbar__item--notepad" href="#" data-window="notepad">
+      <i class="fa fa-pencil"></i>
+    </a>
+    
+    <div class="taskbar__tray">
+      <span class="time">
+        <script>
+          
+         </script>
+      </span>
+    </div>
+  </div>
+  
+  
+  <div class="window window--explorer window--minimized" data-window="explorer" style="width:670px;height:400px;top:5%;left:10%;">
+    <div class="window__titlebar">
+      <div class="window__controls window__controls--left">
+        <a class="window__icon" href="#"><i class="fa fa-folder"></i></a>
+        <a class="window__menutoggle" href="#"><i class="fa fa-bars"></i></a>
+      </div>
+      
+      
+      
+      <span class="window__title">
+        File Explorer
+      </span>
+      
+      <div class="window__controls window__controls--right">
+        <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+        <a class="window__maximize" href="#"><i class="fa"></i></a>
+        <a class="window__close" href="#"><i class="fa fa-close"></i></a>
+      </div>
+    </div>
+    
+    <ul class="window__menu">
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-search"></i>
+            Search
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-share-alt"></i>
+            Share
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-plug"></i>
+            Devices
+          </a>
+        </li>
+        <li class="divided">
+          <a href="#">
+            <i class="menu__icon fa fa-cog"></i>
+            Settings
+          </a>
+        </li>
+      </ul>
+    
+    <div class="window__actions">
+      <a class="window__back" href="#">
+        <i class="fa fa-arrow-left"></i>
+      </a>
+      <a class="window__forward" href="#">
+        <i class="fa fa-arrow-right"></i>
+      </a>
+      <div class="window__path">
+        <a href="#">
+        <i class="fa fa-desktop"></i>
+        Desktop
+        </a>
+      </div>
+      <form class="search">
+        <input type="text" class="search__input" placeholder="Search files and folders">
+        <button class="search__btn">
+        </button>
+      </form>
+    </div>
+    
+    <div class="window__body">
+      
+      <div class="window__side">
+        
+        <ul class="side__list">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Favorites</a>
+            <ul>
+              <li><a href="#">Desktop</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><a href="#">Recent Places</a></li>
+          </ul>
+        </li>
+          <li>
+            <a href="#">This Device</a>
+            <ul style="display:none">
+              <li><a href="#">Desktop</a>
+                <ul style="display:none">
+                  <li>
+                    <a href="#">Folder 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Documents</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><a href="#">Local Disk  (C:)</a></li>
+        </ul>
+      </div>
+      <div class="window__main">
+        <div class="folders">
+            <a class="f1" href="#"></a>
+            <a class="f2" href="#"></a>
+            <a class="f3" href="#"></a>
+            <a class="f4" href="#"></a>
+            <a class="f5" href="#"></a>
+            <a class="f6" href="#"></a>
+            <a class="f7" href="#"></a>
+            <a class="f8" href="#"></a>
+            <a class="f9" href="#"></a>
+            <a class="f10" href="#"></a>
+            <a class="f11" href="#"></a>
+            <a class="f12" href="#"></a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    
+     <div class="window window--mail" data-window="mail" style="display:none;width:400px;height:300px;top:40%;left:40%;">
+    <div class="window__titlebar">
+      <div class="window__controls window__controls--left">
+        <a class="window__icon" href="#"><i class="fa fa-envelope"></i></a>
+        <a class="window__menutoggle" href="#"><i class="fa fa-bars"></i></a>
+      </div>
+      
+      
+      
+      <span class="window__title">
+        Mail
+      </span>
+      
+      <div class="window__controls window__controls--right">
+        <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+        <a class="window__maximize" href="#"><i class="fa"></i></a>
+        <a class="window__close" href="#"><i class="fa fa-close"></i></a>
+      </div>
+    </div>
+    
+    <ul class="window__menu">
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-search"></i>
+            Search
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-share-alt"></i>
+            Share
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-plug"></i>
+            Devices
+          </a>
+        </li>
+        <li class="divided">
+          <a href="#">
+            <i class="menu__icon fa fa-cog"></i>
+            Settings
+          </a>
+        </li>
+      </ul>
+    
+    <div class="window__body">
+      <div class="window__side">
+        
+      </div>
+      <div class="window__main">
+        
+      </div>
+    </div>
+    
+  </div>
+    
+    
+ <div class="window window--notepad" data-window="notepad" style="display:none;width:600px;height:300px;top:10%;left:30%;">
+    <div class="window__titlebar">
+      <div class="window__controls window__controls--left">
+        <a class="window__icon" href="#"><i class="fa fa-pencil"></i></a>
+        <a class="window__menutoggle" href="#"><i class="fa fa-bars"></i></a>
+      </div>
+      
+      
+      
+      <span class="window__title">
+        Notepad
+      </span>
+      
+      <div class="window__controls window__controls--right">
+        <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+        <a class="window__maximize" href="#"><i class="fa"></i></a>
+        <a class="window__close" href="#"><i class="fa fa-close"></i></a>
+      </div>
+    </div>
+    
+    <ul class="window__menu">
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-download"></i>
+            Save
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-folder-open"></i>
+            Open
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="menu__icon fa fa-print"></i>
+            Print
+          </a>
+        </li>
+      <li>
+          <a href="#">
+            <i class="menu__icon fa fa-share-alt"></i>
+            Share
+          </a>
+        </li>
+      
+        <li class="divided">
+          <a href="#">
+            <i class="menu__icon fa fa-file"></i>
+            Format
+          </a>
+      </li>
+      <li>
+          <a href="#">
+            <i class="menu__icon fa fa-cog"></i>
+            Settings
+        </a>
+      </li>
+   </ul>
+    
+    <div class="window__body">
+      <div class="window__main">
+        <textarea class="full-textarea" value="">Selamat ulang tahun, Mem Evhy! Semoga panjang umur, sehat selalu, dan makin jago ngoding sampai bisa bikin program yang bisa ngasih nilai otomatis 'A' buat murid murid, hehe. 😄 Semoga tahun ini makin banyak ilmu yang bisa dibagi, dan semoga storage-nya selalu penuh dengan kebahagiaan, RAM-nya lancar terus, dan virus-nya cuma virus kebahagiaan aja! 🎉🎂 Keep coding and inspiring us, Mem!
+        </textarea>
+      </div>
+    </div>
+    
+  </div>
+
+    
+    
+</div>
+
+
+  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
+
+</body>
+</html>
